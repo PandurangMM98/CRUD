@@ -8,7 +8,7 @@ app.secret_key = "Secret Key"
 
 # -------------------------SqlAlchemy Database Configuration With Mysql------------------------------------------
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:Pandum1998@@localhost/EMPLOYEE'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password@localhost/EMPLOYEE'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
