@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+</head>
+<body>
+{%for row in data %}
+
+
+<div class="modal-body">
+ 
+ 
+            <form action="{{url_for('update')}}" method="POST">
+ 
+ 
+               <div class="form-group">
+ 
+ 
+                  <label>Org_code:</label>
+  					<input type="hidden"  name="Org_code" value="{{row.Org_code}}">
+                  <input type="text" class="form-control" name="Org_code" value="{{row.Org_code}}">
+               </div>
+               <div class="form-group">
+                  <label>Org_Name:</label>
+ 
+                  <input type="text" class="form-control" name="Org_Name" value="{{row.Org_Name}}">
+ 
+ 
+               </div>
+ 
+ 
+               <div class="form-group">
+ 
+ 
+                  <label>Org_city:</label>
+ 
+                  <input type="text" class="form-control" name="Org_city" value="{{row.Org_city}}">
+ 
+ 
+               </div>
+ 
+ 
+               <div class="form-group">
+ 
+ 
+                  <button class="btn btn-primary" type="submit">Update</button>
+ 
+ 
+               </div>
+ 
+ 
+            </form>
+ 
+ 
+         </div>
+
+
+
+{%endfor%}
+
+
+</body>
+</html>
